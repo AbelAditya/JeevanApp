@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "998462777728",
+    "project_id": "jeevan-3d2d3",
+    "storage_bucket": "jeevan-3d2d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998462777728:android:e047b9ec55fa217d7a7965",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998462777728-die02d6dd5veohsbc837llom2sj0r9vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTb86rUJoKV5F5B30ZE7pqt7SuWkEXhIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998462777728-die02d6dd5veohsbc837llom2sj0r9vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

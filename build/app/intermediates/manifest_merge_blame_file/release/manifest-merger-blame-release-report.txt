@@ -1,0 +1,786 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_application_1"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-67
+11-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-64
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-68
+12-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-65
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+13-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-79
+13-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-76
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:13:5-77
+14-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:13:22-74
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-81
+15-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-66
+16-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-63
+17    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+17-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-81
+17-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-78
+18    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+18-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-79
+18-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:12:22-76
+19
+20    <queries>
+20-->[:whatsapp_share] D:\Programming\Healthcare project\Jeevan\build\whatsapp_share\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-14:15
+21
+22        <!-- Explicit apps you know in advance about: -->
+23        <package android:name="com.whatsapp" />
+23-->[:whatsapp_share] D:\Programming\Healthcare project\Jeevan\build\whatsapp_share\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-48
+23-->[:whatsapp_share] D:\Programming\Healthcare project\Jeevan\build\whatsapp_share\intermediates\merged_manifest\release\AndroidManifest.xml:12:18-45
+24        <package android:name="com.whatsapp.w4b" />
+24-->[:whatsapp_share] D:\Programming\Healthcare project\Jeevan\build\whatsapp_share\intermediates\merged_manifest\release\AndroidManifest.xml:13:9-52
+24-->[:whatsapp_share] D:\Programming\Healthcare project\Jeevan\build\whatsapp_share\intermediates\merged_manifest\release\AndroidManifest.xml:13:18-49
+25
+26        <intent>
+26-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:13:9-15:18
+27            <action android:name="android.media.action.IMAGE_CAPTURE" />
+27-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:14:13-73
+27-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:14:21-70
+28        </intent>
+29        <intent>
+29-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:18:9-20:18
+30            <action android:name="android.speech.RecognitionService" />
+30-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:19:13-72
+30-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:19:21-69
+31        </intent>
+32    </queries> <!-- Required by older versions of Google Play services to create IID tokens -->
+33    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+33-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:28:5-82
+33-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:28:22-79
+34    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+34-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\4459893febc0a919f5c931001a6d2e2c\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:25:5-79
+34-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\4459893febc0a919f5c931001a6d2e2c\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:25:22-76
+35    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+35-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:5-110
+35-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:26:22-107
+36
+37    <uses-feature
+37-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\abela\.gradle\caches\transforms-3\0e2f58d236df505b6643a6ceedfd00fb\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+38        android:glEsVersion="0x00020000"
+38-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\abela\.gradle\caches\transforms-3\0e2f58d236df505b6643a6ceedfd00fb\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+39        android:required="true" />
+39-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\abela\.gradle\caches\transforms-3\0e2f58d236df505b6643a6ceedfd00fb\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+40
+41    <application
+42        android:name="android.app.Application"
+42-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:7:9-42
+43        android:allowBackup="true"
+43-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:24:9-35
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.6.0] C:\Users\abela\.gradle\caches\transforms-3\dc66a9e887fa197d342a9170a296fb1f\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+45        android:icon="@mipmap/ic_launcher"
+45-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:8:9-43
+46        android:label="Jeevan"
+46-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:6:9-31
+47        android:supportsRtl="true" >
+47-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:26:9-35
+48        <activity
+48-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:9:9-29:20
+49            android:name="com.example.flutter_application_1.MainActivity"
+49-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:10:13-41
+50            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+50-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:14:13-163
+51            android:exported="true"
+51-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:11:13-36
+52            android:hardwareAccelerated="true"
+52-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:15:13-47
+53            android:launchMode="singleTop"
+53-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:12:13-43
+54            android:theme="@style/LaunchTheme"
+54-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:13:13-47
+55            android:windowSoftInputMode="adjustResize" >
+55-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:16:13-55
+56
+57            <!--
+58                 Specifies an Android theme to apply to this Activity as soon as
+59                 the Android process has started. This theme is visible to the user
+60                 while the Flutter UI initializes. After that, this theme continues
+61                 to determine the Window background behind the Flutter UI.
+62            -->
+63            <meta-data
+63-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:21:13-24:17
+64                android:name="io.flutter.embedding.android.NormalTheme"
+64-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:22:15-70
+65                android:resource="@style/NormalTheme" />
+65-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:23:15-52
+66
+67            <intent-filter>
+67-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:25:13-28:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:26:17-68
+68-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:26:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:27:17-76
+70-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:27:27-74
+71            </intent-filter>
+72        </activity>
+73        <!--
+74             Don't delete the meta-data below.
+75             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+76        -->
+77        <meta-data
+77-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:32:9-34:33
+78            android:name="flutterEmbedding"
+78-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:33:13-44
+79            android:value="2" />
+79-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:34:13-30
+80
+81        <service
+81-->[:firebase_auth] D:\Programming\Healthcare project\Jeevan\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-14:19
+82            android:name="com.google.firebase.components.ComponentDiscoveryService"
+82-->[:firebase_auth] D:\Programming\Healthcare project\Jeevan\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:10:18-89
+83            android:directBootAware="true"
+83-->[com.google.firebase:firebase-common:20.3.2] C:\Users\abela\.gradle\caches\transforms-3\d0329f9e423b96e827a6bc0ab4cc7266\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+84            android:exported="false" >
+84-->[com.google.firebase:firebase-analytics-ktx:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\953d4a6925f339cb3810f1fefd149ed5\transformed\jetified-firebase-analytics-ktx-21.2.2\AndroidManifest.xml:10:13-37
+85            <meta-data
+85-->[:firebase_auth] D:\Programming\Healthcare project\Jeevan\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+86                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+86-->[:firebase_auth] D:\Programming\Healthcare project\Jeevan\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[:firebase_auth] D:\Programming\Healthcare project\Jeevan\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+88            <meta-data
+88-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:38:13-40:85
+89                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+89-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:39:17-128
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:40:17-82
+91            <meta-data
+91-->[:firebase_core] D:\Programming\Healthcare project\Jeevan\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+92                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+92-->[:firebase_core] D:\Programming\Healthcare project\Jeevan\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[:firebase_core] D:\Programming\Healthcare project\Jeevan\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+94            <meta-data
+94-->[com.google.firebase:firebase-analytics-ktx:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\953d4a6925f339cb3810f1fefd149ed5\transformed\jetified-firebase-analytics-ktx-21.2.2\AndroidManifest.xml:11:13-13:85
+95                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+95-->[com.google.firebase:firebase-analytics-ktx:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\953d4a6925f339cb3810f1fefd149ed5\transformed\jetified-firebase-analytics-ktx-21.2.2\AndroidManifest.xml:12:17-126
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.firebase:firebase-analytics-ktx:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\953d4a6925f339cb3810f1fefd149ed5\transformed\jetified-firebase-analytics-ktx-21.2.2\AndroidManifest.xml:13:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:69:13-71:85
+98                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+98-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:70:17-109
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:71:17-82
+100            <meta-data
+100-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\abela\.gradle\caches\transforms-3\077e52a0d211f379a17c6048a254f5eb\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:14:13-16:85
+101                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+101-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\abela\.gradle\caches\transforms-3\077e52a0d211f379a17c6048a254f5eb\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:15:17-113
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-common-ktx:20.3.2] C:\Users\abela\.gradle\caches\transforms-3\077e52a0d211f379a17c6048a254f5eb\transformed\jetified-firebase-common-ktx-20.3.2\AndroidManifest.xml:16:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:55:13-57:85
+104                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+104-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:56:17-119
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:57:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\abela\.gradle\caches\transforms-3\d2e757011fa2a3f2b7928334e75912b8\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+107                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+107-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\abela\.gradle\caches\transforms-3\d2e757011fa2a3f2b7928334e75912b8\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\abela\.gradle\caches\transforms-3\d2e757011fa2a3f2b7928334e75912b8\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\abela\.gradle\caches\transforms-3\65c2c811c245516bf86cfdf30c7b2a94\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+110                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+110-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\abela\.gradle\caches\transforms-3\65c2c811c245516bf86cfdf30c7b2a94\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\abela\.gradle\caches\transforms-3\65c2c811c245516bf86cfdf30c7b2a94\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+112            <meta-data
+112-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\4459893febc0a919f5c931001a6d2e2c\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:31:13-33:85
+113                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+113-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\4459893febc0a919f5c931001a6d2e2c\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:32:17-139
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\4459893febc0a919f5c931001a6d2e2c\transformed\jetified-play-services-measurement-api-21.2.2\AndroidManifest.xml:33:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\abela\.gradle\caches\transforms-3\421a5a91c4aa45338f24181b907b961d\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+116                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+116-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\abela\.gradle\caches\transforms-3\421a5a91c4aa45338f24181b907b961d\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\abela\.gradle\caches\transforms-3\421a5a91c4aa45338f24181b907b961d\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+118        </service>
+119        <service
+119-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-19:72
+120            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+120-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-107
+121            android:exported="false"
+121-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+122            android:permission="android.permission.BIND_JOB_SERVICE" />
+122-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-69
+123        <service
+123-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:20:9-26:19
+124            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+124-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-97
+125            android:exported="false" >
+125-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-37
+126            <intent-filter>
+126-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
+127                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+127-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
+127-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
+128            </intent-filter>
+129        </service>
+130
+131        <receiver
+131-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-35:20
+132            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+132-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-98
+133            android:exported="true"
+133-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-36
+134            android:permission="com.google.android.c2dm.permission.SEND" >
+134-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-73
+135            <intent-filter>
+135-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-34:29
+136                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+136-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
+136-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
+137            </intent-filter>
+138        </receiver>
+139
+140        <provider
+140-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:43:9-47:38
+141            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+141-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:44:13-102
+142            android:authorities="com.example.flutter_application_1.flutterfirebasemessaginginitprovider"
+142-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:45:13-88
+143            android:exported="false"
+143-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:46:13-37
+144            android:initOrder="99" />
+144-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:47:13-35
+145
+146        <receiver
+146-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-18:40
+147            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+147-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-91
+148            android:exported="false" />
+148-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+149        <receiver
+149-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-21:40
+150            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+150-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-97
+151            android:exported="false" />
+151-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-37
+152        <receiver
+152-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:22:9-31:20
+153            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+153-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-101
+154            android:exported="false" >
+154-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-37
+155            <intent-filter>
+155-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:25:13-30:29
+156                <action android:name="android.intent.action.BOOT_COMPLETED" />
+156-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:17-79
+156-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:25-76
+157                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+157-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:27:17-84
+157-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:27:25-81
+158                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+158-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:17-82
+158-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:25-79
+159                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+159-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-82
+159-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:25-79
+160            </intent-filter>
+161        </receiver>
+162
+163        <activity
+163-->[:url_launcher_android] D:\Programming\Healthcare project\Jeevan\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+164            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+164-->[:url_launcher_android] D:\Programming\Healthcare project\Jeevan\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+165            android:exported="false"
+165-->[:url_launcher_android] D:\Programming\Healthcare project\Jeevan\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+166            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+166-->[:url_launcher_android] D:\Programming\Healthcare project\Jeevan\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+167        <activity
+167-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:29:9-46:20
+168            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+168-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:30:13-80
+169            android:excludeFromRecents="true"
+169-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:31:13-46
+170            android:exported="true"
+170-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:32:13-36
+171            android:launchMode="singleTask"
+171-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:33:13-44
+172            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+172-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:34:13-72
+173            <intent-filter>
+173-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:35:13-45:29
+174                <action android:name="android.intent.action.VIEW" />
+174-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
+174-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
+175
+176                <category android:name="android.intent.category.DEFAULT" />
+176-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
+176-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
+177                <category android:name="android.intent.category.BROWSABLE" />
+177-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+177-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+178
+179                <data
+179-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
+180                    android:host="firebase.auth"
+180-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
+181                    android:path="/"
+181-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
+182                    android:scheme="genericidp" />
+182-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
+183            </intent-filter>
+184        </activity>
+185        <activity
+185-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:47:9-64:20
+186            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+186-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:48:13-79
+187            android:excludeFromRecents="true"
+187-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:49:13-46
+188            android:exported="true"
+188-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:50:13-36
+189            android:launchMode="singleTask"
+189-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:51:13-44
+190            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+190-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:52:13-72
+191            <intent-filter>
+191-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:53:13-63:29
+192                <action android:name="android.intent.action.VIEW" />
+192-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:36:17-69
+192-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:36:25-66
+193
+194                <category android:name="android.intent.category.DEFAULT" />
+194-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:17-76
+194-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:38:27-73
+195                <category android:name="android.intent.category.BROWSABLE" />
+195-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:17-78
+195-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:39:27-75
+196
+197                <data
+197-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:41:17-44:51
+198                    android:host="firebase.auth"
+198-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:42:21-49
+199                    android:path="/"
+199-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:43:21-37
+200                    android:scheme="recaptcha" />
+200-->[com.google.firebase:firebase-auth:22.0.0] C:\Users\abela\.gradle\caches\transforms-3\86612b671f974fc71a2d31d84741def7\transformed\jetified-firebase-auth-22.0.0\AndroidManifest.xml:44:21-48
+201            </intent-filter>
+202        </activity>
+203
+204        <uses-library
+204-->[androidx.window:window:1.0.0-beta04] C:\Users\abela\.gradle\caches\transforms-3\fd5f419e863560aa62f941d72f6221aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+205            android:name="androidx.window.extensions"
+205-->[androidx.window:window:1.0.0-beta04] C:\Users\abela\.gradle\caches\transforms-3\fd5f419e863560aa62f941d72f6221aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+206            android:required="false" />
+206-->[androidx.window:window:1.0.0-beta04] C:\Users\abela\.gradle\caches\transforms-3\fd5f419e863560aa62f941d72f6221aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+207        <uses-library
+207-->[androidx.window:window:1.0.0-beta04] C:\Users\abela\.gradle\caches\transforms-3\fd5f419e863560aa62f941d72f6221aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+208            android:name="androidx.window.sidecar"
+208-->[androidx.window:window:1.0.0-beta04] C:\Users\abela\.gradle\caches\transforms-3\fd5f419e863560aa62f941d72f6221aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+209            android:required="false" />
+209-->[androidx.window:window:1.0.0-beta04] C:\Users\abela\.gradle\caches\transforms-3\fd5f419e863560aa62f941d72f6221aa\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+210
+211        <provider
+211-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:27:9-36:20
+212            android:name="com.applozic.mobicomkit.uiwidgets.KmFileProvider"
+212-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:28:13-76
+213            android:authorities="com.example.flutter_application_1.provider"
+213-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:29:13-60
+214            android:exported="false"
+214-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:30:13-37
+215            android:grantUriPermissions="true" >
+215-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:31:13-47
+216            <meta-data
+216-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:33:13-35:61
+217                android:name="android.support.FILE_PROVIDER_PATHS"
+217-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:34:17-67
+218                android:resource="@xml/km_provider_paths" />
+218-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:35:17-58
+219        </provider>
+220
+221        <service
+221-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:38:9-45:19
+222            android:name="com.applozic.mobicomkit.uiwidgets.KmFirebaseMessagingService"
+222-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:39:13-88
+223            android:exported="true"
+223-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:40:13-36
+224            android:stopWithTask="false" >
+224-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:41:13-41
+225            <intent-filter>
+225-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
+226                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+226-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
+226-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
+227            </intent-filter>
+228        </service>
+229
+230        <activity
+230-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:47:9-53:34
+231            android:name="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity"
+231-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:48:13-104
+232            android:configChanges="keyboardHidden|screenSize|locale|smallestScreenSize|screenLayout|orientation"
+232-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:49:13-113
+233            android:label="@string/app_name"
+233-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:50:13-45
+234            android:launchMode="singleTask"
+234-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:51:13-44
+235            android:theme="@style/ApplozicTheme" />
+235-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:52:13-49
+236        <activity
+236-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:54:9-59:58
+237            android:name="com.applozic.mobicomkit.uiwidgets.conversation.activity.MobicomLocationActivity"
+237-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:55:13-107
+238            android:configChanges="keyboardHidden|screenSize|smallestScreenSize|screenLayout|orientation"
+238-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:56:13-106
+239            android:parentActivityName="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity"
+239-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:57:13-118
+240            android:theme="@style/ApplozicTheme"
+240-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:58:13-49
+241            android:windowSoftInputMode="adjustResize" />
+241-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:59:13-55
+242        <activity
+242-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:60:9-72:20
+243            android:name="com.applozic.mobicomkit.uiwidgets.conversation.activity.FullScreenImageActivity"
+243-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:61:13-107
+244            android:configChanges="keyboardHidden|orientation|screenSize"
+244-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:62:13-74
+245            android:label="Image"
+245-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:63:13-34
+246            android:parentActivityName="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity"
+246-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:64:13-118
+247            android:theme="@style/Applozic_FullScreen_Theme" >
+247-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:65:13-61
+248
+249            <!-- Parent activity meta-data to support API level 7+ -->
+250            <meta-data
+250-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:69:13-71:112
+251                android:name="android.support.PARENT_ACTIVITY"
+251-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:70:17-63
+252                android:value="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity" />
+252-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:71:17-109
+253        </activity>
+254        <activity
+254-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:73:9-80:34
+255            android:name="com.applozic.mobicomkit.uiwidgets.conversation.richmessaging.webview.KmWebViewActivity"
+255-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:74:13-114
+256            android:configChanges="keyboardHidden|orientation|screenSize"
+256-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:75:13-74
+257            android:label="Image"
+257-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:76:13-34
+258            android:launchMode="singleTop"
+258-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:77:13-43
+259            android:parentActivityName="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity"
+259-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:78:13-118
+260            android:theme="@style/ApplozicTheme" />
+260-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:79:13-49
+261        <activity
+261-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:81:9-85:34
+262            android:name="com.applozic.mobicomkit.uiwidgets.kommunicate.activities.LeadCollectionActivity"
+262-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:82:13-107
+263            android:configChanges="keyboardHidden|orientation|screenSize"
+263-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:83:13-74
+264            android:theme="@style/ApplozicTheme" />
+264-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:84:13-49
+265        <activity
+265-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:86:9-96:20
+266            android:name="com.applozic.mobicomkit.uiwidgets.conversation.activity.MobiComAttachmentSelectorActivity"
+266-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:87:13-117
+267            android:configChanges="keyboardHidden|screenSize|smallestScreenSize|screenLayout|orientation"
+267-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:88:13-106
+268            android:launchMode="singleTop"
+268-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:89:13-43
+269            android:parentActivityName="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity"
+269-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:90:13-118
+270            android:theme="@style/ApplozicTheme"
+270-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:91:13-49
+271            android:windowSoftInputMode="stateHidden|adjustResize" >
+271-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:92:13-67
+272            <meta-data
+272-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:69:13-71:112
+273                android:name="android.support.PARENT_ACTIVITY"
+273-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:70:17-63
+274                android:value="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity" />
+274-->[io.kommunicate.sdk:kommunicateui:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\1efe1d24929eb0d0f6654b2f107880f6\transformed\jetified-kommunicateui-2.7.1\AndroidManifest.xml:71:17-109
+275        </activity>
+276
+277        <receiver
+277-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:31:9-38:20
+278            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+278-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:32:13-78
+279            android:exported="true"
+279-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:33:13-36
+280            android:permission="com.google.android.c2dm.permission.SEND" >
+280-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:34:13-73
+281            <intent-filter>
+281-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-34:29
+282                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+282-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
+282-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
+283            </intent-filter>
+284        </receiver>
+285        <!--
+286             FirebaseMessagingService performs security checks at runtime,
+287             but set to not exported to explicitly avoid allowing another app to call it.
+288        -->
+289        <service
+289-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:44:9-51:19
+290            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+290-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:45:13-82
+291            android:directBootAware="true"
+291-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:46:13-43
+292            android:exported="false" >
+292-->[com.google.firebase:firebase-messaging:23.1.2] C:\Users\abela\.gradle\caches\transforms-3\9842be8d90f3069c1f82326ad6e44467\transformed\jetified-firebase-messaging-23.1.2\AndroidManifest.xml:47:13-37
+293            <intent-filter android:priority="-500" >
+293-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
+294                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+294-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
+294-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
+295            </intent-filter>
+296        </service>
+297        <service
+297-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\22136d7745569f3116a3cd0c6d7d4583\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+298            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+298-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\22136d7745569f3116a3cd0c6d7d4583\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+299            android:exported="false" >
+299-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\22136d7745569f3116a3cd0c6d7d4583\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+300            <meta-data
+300-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\22136d7745569f3116a3cd0c6d7d4583\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+301                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+301-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\22136d7745569f3116a3cd0c6d7d4583\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+302                android:value="cct" />
+302-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\22136d7745569f3116a3cd0c6d7d4583\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+303        </service>
+304        <service
+304-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\ea8a009893aefb1176efbd6ce0ba0aee\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+305            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+305-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\ea8a009893aefb1176efbd6ce0ba0aee\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+306            android:exported="false"
+306-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\ea8a009893aefb1176efbd6ce0ba0aee\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+307            android:permission="android.permission.BIND_JOB_SERVICE" >
+307-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\ea8a009893aefb1176efbd6ce0ba0aee\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+308        </service>
+309
+310        <receiver
+310-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\ea8a009893aefb1176efbd6ce0ba0aee\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+311            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+311-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\ea8a009893aefb1176efbd6ce0ba0aee\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+312            android:exported="false" />
+312-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\abela\.gradle\caches\transforms-3\ea8a009893aefb1176efbd6ce0ba0aee\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+313
+314        <provider
+314-->[com.google.firebase:firebase-common:20.3.2] C:\Users\abela\.gradle\caches\transforms-3\d0329f9e423b96e827a6bc0ab4cc7266\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+315            android:name="com.google.firebase.provider.FirebaseInitProvider"
+315-->[com.google.firebase:firebase-common:20.3.2] C:\Users\abela\.gradle\caches\transforms-3\d0329f9e423b96e827a6bc0ab4cc7266\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+316            android:authorities="com.example.flutter_application_1.firebaseinitprovider"
+316-->[com.google.firebase:firebase-common:20.3.2] C:\Users\abela\.gradle\caches\transforms-3\d0329f9e423b96e827a6bc0ab4cc7266\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+317            android:directBootAware="true"
+317-->[com.google.firebase:firebase-common:20.3.2] C:\Users\abela\.gradle\caches\transforms-3\d0329f9e423b96e827a6bc0ab4cc7266\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+318            android:exported="false"
+318-->[com.google.firebase:firebase-common:20.3.2] C:\Users\abela\.gradle\caches\transforms-3\d0329f9e423b96e827a6bc0ab4cc7266\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+319            android:initOrder="100" />
+319-->[com.google.firebase:firebase-common:20.3.2] C:\Users\abela\.gradle\caches\transforms-3\d0329f9e423b96e827a6bc0ab4cc7266\transformed\jetified-firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+320
+321        <meta-data
+321-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:30:9-33:34
+322            android:name="main_folder_name"
+322-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:31:13-44
+323            android:value="Kommunicate" />
+323-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:32:13-40
+324
+325        <service
+325-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:35:9-39:34
+326            android:name="com.applozic.mobicomkit.api.conversation.MessageIntentService"
+326-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:36:13-89
+327            android:exported="false"
+327-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:37:13-37
+328            android:permission="android.permission.BIND_JOB_SERVICE" />
+328-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:38:13-69
+329        <service
+329-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:40:9-44:34
+330            android:name="com.applozic.mobicomkit.api.conversation.ApplozicIntentService"
+330-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:41:13-90
+331            android:exported="false"
+331-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:42:13-37
+332            android:permission="android.permission.BIND_JOB_SERVICE" />
+332-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:43:13-69
+333        <service
+333-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:45:9-49:34
+334            android:name="com.applozic.mobicomkit.api.conversation.ApplozicMqttIntentService"
+334-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:46:13-94
+335            android:exported="false"
+335-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:47:13-37
+336            android:permission="android.permission.BIND_JOB_SERVICE" />
+336-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:48:13-69
+337        <service
+337-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:50:9-54:34
+338            android:name="com.applozic.mobicomkit.api.people.UserIntentService"
+338-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:51:13-80
+339            android:exported="false"
+339-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:52:13-37
+340            android:permission="android.permission.BIND_JOB_SERVICE" />
+340-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:53:13-69
+341        <service
+341-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:55:9-59:34
+342            android:name="com.applozic.mobicomkit.api.conversation.ConversationIntentService"
+342-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:56:13-94
+343            android:exported="false"
+343-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:57:13-37
+344            android:permission="android.permission.BIND_JOB_SERVICE" />
+344-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:58:13-69
+345
+346        <receiver
+346-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:61:9-69:20
+347            android:name="com.applozic.mobicomkit.broadcast.TimeChangeBroadcastReceiver"
+347-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:62:13-89
+348            android:exported="true" >
+348-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:63:13-36
+349            <intent-filter>
+349-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:65:13-68:29
+350                <action android:name="android.intent.action.TIME_SET" />
+350-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:66:17-73
+350-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:66:25-70
+351                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+351-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:67:17-81
+351-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:67:25-78
+352            </intent-filter>
+353        </receiver>
+354        <receiver
+354-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:70:9-79:20
+355            android:name="com.applozic.mobicomkit.broadcast.ConnectivityReceiver"
+355-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:71:13-82
+356            android:enabled="true"
+356-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:72:13-35
+357            android:exported="true" >
+357-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:73:13-36
+358            <intent-filter>
+358-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:75:13-78:29
+359                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+359-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:17-82
+359-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:25-79
+360                <action android:name="android.intent.action.BOOT_COMPLETED" />
+360-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:17-79
+360-->[:flutter_local_notifications] D:\Programming\Healthcare project\Jeevan\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:25-76
+361            </intent-filter>
+362        </receiver>
+363
+364        <meta-data
+364-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:81:9-83:108
+365            android:name="activity.open.on.notification"
+365-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:82:13-57
+366            android:value="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity" />
+366-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:83:13-105
+367        <meta-data
+367-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:84:9-86:48
+368            android:name="com.package.name"
+368-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:85:13-44
+369            android:value="com.example.flutter_application_1" />
+369-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:86:13-45
+370        <meta-data
+370-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:87:9-89:59
+371            android:name="com.applozic.server.url"
+371-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:88:13-51
+372            android:value="https://chat.kommunicate.io" />
+372-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:89:13-56
+373        <meta-data
+373-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:90:9-92:64
+374            android:name="com.applozic.mqtt.server.url"
+374-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:91:13-56
+375            android:value="tcp://socket.kommunicate.io:1883" />
+375-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:92:13-61
+376        <meta-data
+376-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:93:9-95:42
+377            android:name="com.applozic.mobicomkit.notification.tone"
+377-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:94:13-69
+378            android:value="eventually" />
+378-->[io.kommunicate.sdk:kommunicate:2.7.1] C:\Users\abela\.gradle\caches\transforms-3\e293bd5142a5b796a519dcaffe462e3e\transformed\jetified-kommunicate-2.7.1\AndroidManifest.xml:95:13-39
+379
+380        <receiver
+380-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:29:9-33:20
+381            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+381-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:30:13-85
+382            android:enabled="true"
+382-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:31:13-35
+383            android:exported="false" >
+383-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:32:13-37
+384        </receiver>
+385
+386        <service
+386-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:35:9-38:40
+387            android:name="com.google.android.gms.measurement.AppMeasurementService"
+387-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:36:13-84
+388            android:enabled="true"
+388-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:37:13-35
+389            android:exported="false" />
+389-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:38:13-37
+390        <service
+390-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:39:9-43:72
+391            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+391-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:40:13-87
+392            android:enabled="true"
+392-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:41:13-35
+393            android:exported="false"
+393-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:42:13-37
+394            android:permission="android.permission.BIND_JOB_SERVICE" />
+394-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\abela\.gradle\caches\transforms-3\037e48d082df3b02aaaf4e885597c278\transformed\jetified-play-services-measurement-21.2.2\AndroidManifest.xml:43:13-69
+395
+396        <activity
+396-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\abela\.gradle\caches\transforms-3\960c7a15a5f6f8b7cedc0bb87a0d4247\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:23:9-27:75
+397            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+397-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\abela\.gradle\caches\transforms-3\960c7a15a5f6f8b7cedc0bb87a0d4247\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:24:13-93
+398            android:excludeFromRecents="true"
+398-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\abela\.gradle\caches\transforms-3\960c7a15a5f6f8b7cedc0bb87a0d4247\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:25:13-46
+399            android:exported="false"
+399-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\abela\.gradle\caches\transforms-3\960c7a15a5f6f8b7cedc0bb87a0d4247\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:26:13-37
+400            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+400-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\abela\.gradle\caches\transforms-3\960c7a15a5f6f8b7cedc0bb87a0d4247\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:27:13-72
+401        <!--
+402            Service handling Google Sign-In user revocation. For apps that do not integrate with
+403            Google Sign-In, this service will never be started.
+404        -->
+405        <service
+405-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\abela\.gradle\caches\transforms-3\960c7a15a5f6f8b7cedc0bb87a0d4247\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:33:9-37:51
+406            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+406-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\abela\.gradle\caches\transforms-3\960c7a15a5f6f8b7cedc0bb87a0d4247\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:34:13-89
+407            android:exported="true"
+407-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\abela\.gradle\caches\transforms-3\960c7a15a5f6f8b7cedc0bb87a0d4247\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:35:13-36
+408            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+408-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\abela\.gradle\caches\transforms-3\960c7a15a5f6f8b7cedc0bb87a0d4247\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:36:13-107
+409            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+409-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\abela\.gradle\caches\transforms-3\960c7a15a5f6f8b7cedc0bb87a0d4247\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:37:13-48
+410        <uses-library
+410-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\abela\.gradle\caches\transforms-3\0e2f58d236df505b6643a6ceedfd00fb\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+411            android:name="org.apache.http.legacy"
+411-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\abela\.gradle\caches\transforms-3\0e2f58d236df505b6643a6ceedfd00fb\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+412            android:required="false" />
+412-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\abela\.gradle\caches\transforms-3\0e2f58d236df505b6643a6ceedfd00fb\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+413
+414        <activity
+414-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\abela\.gradle\caches\transforms-3\408206dd9b8dab6a2466e53f1796208b\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+415            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+415-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\abela\.gradle\caches\transforms-3\408206dd9b8dab6a2466e53f1796208b\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+416            android:exported="false"
+416-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\abela\.gradle\caches\transforms-3\408206dd9b8dab6a2466e53f1796208b\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+417            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+417-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\abela\.gradle\caches\transforms-3\408206dd9b8dab6a2466e53f1796208b\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+418
+419        <meta-data
+419-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\abela\.gradle\caches\transforms-3\ff69d175c49cfa9394e8ca832c98affc\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+420            android:name="com.google.android.gms.version"
+420-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\abela\.gradle\caches\transforms-3\ff69d175c49cfa9394e8ca832c98affc\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+421            android:value="@integer/google_play_services_version" />
+421-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\abela\.gradle\caches\transforms-3\ff69d175c49cfa9394e8ca832c98affc\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+422    </application>
+423
+424</manifest>

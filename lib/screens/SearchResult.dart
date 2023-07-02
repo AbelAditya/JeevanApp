@@ -8,6 +8,7 @@ import 'package:get/get.dart';
 import 'package:flutter_application_1/modals/data.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_application_1/modals/chips.dart';
+import '../modals/MarketItem.dart';
 
 class SearchResult extends StatefulWidget {
   SearchResult();
@@ -19,10 +20,31 @@ class SearchResult extends StatefulWidget {
 class _SearchResultState extends State<SearchResult> {
   TextEditingController _search = TextEditingController();
 
+  List items = [['images/Jeevan/accessories.jpg','Accesories and Wearables'],
+    ['images/Jeevan/fitness_suppliments.jpg','Fitness Suppliments'],
+    ['images/Jeevan/food_and_drinks.jpg','Food and Drinks'],
+    ['images/Jeevan/health_condition.jpg','Health Condition'],
+    ['images/Jeevan/healthcare_devices.jpg','Healthcare Devices'],
+    ['images/Jeevan/home_care.jpg','Home Care'],
+    ['images/Jeevan/medicines.jpg','Medicines'],
+    ['images/Jeevan/mother_and_baby_care.jpg','Mother and Baby Care'],
+    ['images/Jeevan/nutritional_suppliments.webp','Nutritional Suppliments'],
+    ['images/Jeevan/personal_care.jfif','Personal Care'],
+    ['images/Jeevan/skin_care.jpg','Skin Care']
+  ];
+
   List med = [];
   TController cont = Get.put(TController());
 
   List chipList = [[""],];
+  
+  @override
+  void didChangeDependencies(){
+    super.didChangeDependencies();
+    for(int i=0;i<items.length;i++){
+      precacheImage(AssetImage(items[i][0]), context);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,14 +54,9 @@ class _SearchResultState extends State<SearchResult> {
           height: 844.h,
           width: 390.w,
           child: Expanded(
-            child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3,
-                ),
-                itemCount: 11,
-                itemBuilder: (BuildContext context, int index) {
-                  return Chip1(title: "Title",AssetName: "images/supplement.jpg",);
-                }),
+            child: ListView.builder(itemBuilder: (context, index)=> MarketItem(img: items[index][0], name: items[index][1]),
+            itemCount: items.length,
+            )
           ),
         ),Container(
           alignment: Alignment.bottomCenter,
@@ -50,7 +67,7 @@ class _SearchResultState extends State<SearchResult> {
               height: 50,
               child: ElevatedButton(
                 onPressed: ()async{
-                  String url = "whatsapp://send?phone=+918640098293&text=${Uri.encodeComponent("I would like to place an order.")}";
+                  String url = "whatsapp://send?phone=+916383164829&text=${Uri.encodeComponent("I would like to place an order.")}";
                   await canLaunchUrl(Uri.parse(url))?launchUrl(Uri.parse(url)):print("Couldn't send order");
                 },
                 child: Text("SEND ORDER",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600),),

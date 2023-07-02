@@ -8,7 +8,7 @@ import 'package:flutter_application_1/views/Page_1.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-
+import 'screens/SplashScreen.dart';
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   print("Handling a background message: ${message.messageId}");
 }
@@ -26,8 +26,7 @@ void main() async {
       print('Message also contained a notification: ${message.notification}');
     }
   });
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
-      .then((value) => runApp(MyApp()));
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -49,7 +48,7 @@ class MyApp extends StatelessWidget {
             primaryColor: Colors.lightGreenAccent,
             useMaterial3: true,
           ),
-          home: Onboard(),
+          home: Splashscreen(),
         );
       },
     );

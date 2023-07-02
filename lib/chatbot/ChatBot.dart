@@ -1,62 +1,59 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/modals/data.dart';
+import 'ChatBotController.dart';
 import 'ChatBubble.dart';
 import 'MessageBox.dart';
-void main() {
-  runApp(chatBot());
-}
+import 'package:get/get.dart';
+import 'package:flutter/services.dart';
 
-class chatBot extends StatefulWidget {
-  @override
-  State<chatBot> createState() => _chatBotState();
-}
+class ChatBot extends GetView<ChatBotController> {
+  final ChatBotController chat_controller = Get.put(ChatBotController());
 
-class _chatBotState extends State<chatBot> {
-  TController cont = TController();
   @override
   Widget build(BuildContext context) {
-    final ScrollController _scrollController = ScrollController();
-
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'ChatBot',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
-          title: const Text('ChatBot'),
+          backgroundColor: Color(0xff40e0d0),
+          title: Row(
+              children: [
+                SizedBox(width: 15),
+                CircleAvatar(
+                  radius: 20,
+                  backgroundImage: AssetImage('images/jeevan.jpg'),
+                ),
+                SizedBox(width: 15),
+                Text('Jeevan'),
+              ]
+          ),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Expanded(
-              child: SingleChildScrollView(
-                controller: _scrollController,
-                dragStartBehavior: DragStartBehavior.down,
-                child: ListView.builder(
-                  itemCount: cont.messages.length,
-                  shrinkWrap: true,
-                  padding: EdgeInsets.only(top: 10, bottom: 10),
-                  physics: NeverScrollableScrollPhysics(),
-                  itemBuilder: (context, index) {
-                    return ChatBubble(
-                      message: cont.messages[index].msg,
-                      dateTime: cont.messages[index].dateTime,
-                      isMe: cont.messages[index].isMe,
-                    );
-                  },
+              child: Obx(
+                    () => SingleChildScrollView(
+                  controller: chat_controller.scrollController,
+                  dragStartBehavior: DragStartBehavior.down,
+                  child: ListView.builder(
+                    itemCount: chat_controller.messages.length,
+                    shrinkWrap: true,
+                    padding: EdgeInsets.only(top: 10, bottom: 10),
+                    physics: NeverScrollableScrollPhysics(),
+                    itemBuilder: (context, index) {
+                      return ChatBubble(
+                        message: chat_controller.messages[index]['message'],
+                        dateTime: chat_controller.messages[index]['dateTime'],
+                        isMe: chat_controller.messages[index]['isMe'],
+                      );
+                    },
+                  ),
                 ),
               ),
             ),
-            MessageBox(
-              scrollController: _scrollController,
-            ),
+            MessageBox(chat_controller: chat_controller,),
           ],
         ),
-      ),
     );
   }
 }

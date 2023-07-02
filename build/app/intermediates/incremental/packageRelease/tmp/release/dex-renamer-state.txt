@@ -1,0 +1,4 @@
+#Wed Jun 28 22:08:15 IST 2023
+base.0=D\:\\Programming\\Healthcare project\\Jeevan\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

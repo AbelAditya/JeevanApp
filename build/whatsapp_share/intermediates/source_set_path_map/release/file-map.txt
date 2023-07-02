@@ -1,0 +1,12 @@
+com.example.whatsapp_share-jetified-annotation-experimental-1.1.0-0 C:\Users\abela\.gradle\caches\transforms-3\4da258d73ad21ac3b77ed1f360b8c1be\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.whatsapp_share-core-1.6.0-1 C:\Users\abela\.gradle\caches\transforms-3\dc66a9e887fa197d342a9170a296fb1f\transformed\core-1.6.0\res
+com.example.whatsapp_share-jetified-window-java-1.0.0-beta04-2 C:\Users\abela\.gradle\caches\transforms-3\f0b974b758349e9c54fcc6f9656f330a\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.whatsapp_share-jetified-window-1.0.0-beta04-3 C:\Users\abela\.gradle\caches\transforms-3\fd5f419e863560aa62f941d72f6221aa\transformed\jetified-window-1.0.0-beta04\res
+com.example.whatsapp_share-main-4 C:\Users\abela\AppData\Local\Pub\Cache\hosted\pub.dev\whatsapp_share-2.0.1\android\src\main\res
+com.example.whatsapp_share-release-5 C:\Users\abela\AppData\Local\Pub\Cache\hosted\pub.dev\whatsapp_share-2.0.1\android\src\release\res
+com.example.whatsapp_share-pngs-6 D:\Programming\Healthcare project\Jeevan\build\whatsapp_share\generated\res\pngs\release
+com.example.whatsapp_share-resValues-7 D:\Programming\Healthcare project\Jeevan\build\whatsapp_share\generated\res\resValues\release
+com.example.whatsapp_share-rs-8 D:\Programming\Healthcare project\Jeevan\build\whatsapp_share\generated\res\rs\release
+com.example.whatsapp_share-mergeReleaseResources-9 D:\Programming\Healthcare project\Jeevan\build\whatsapp_share\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.example.whatsapp_share-mergeReleaseResources-10 D:\Programming\Healthcare project\Jeevan\build\whatsapp_share\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.example.whatsapp_share-merged_res-11 D:\Programming\Healthcare project\Jeevan\build\whatsapp_share\intermediates\merged_res\release

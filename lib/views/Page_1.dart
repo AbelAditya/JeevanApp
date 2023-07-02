@@ -9,9 +9,9 @@ import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:flutter_application_1/screens/SearchResult.dart';
 import 'Cart.dart';
 import 'package:flutter_application_1/modals/data.dart';
-import 'package:flutter_application_1/screens/chatBot.dart';
 import 'package:kommunicate_flutter/kommunicate_flutter.dart';
 import 'package:flutter_application_1/screens/homeScreen.dart';
+import '../chatbot/ChatBot.dart';
 
 class Onboard extends StatefulWidget {
   const Onboard({super.key});
@@ -27,10 +27,10 @@ class _OnboardState extends State<Onboard> {
 
   TController cont = Get.put(TController());
 
-  void initState(){
-    cont.getAllProd();
-    super.initState();
-  }
+  // void initState(){
+  //   cont.getAllProd();
+  //   super.initState();
+  // }
   void changePage(int val){
     setState(() {
       index=val;
@@ -45,9 +45,7 @@ class _OnboardState extends State<Onboard> {
         changeToBot: ()=> changePage(2),
       ),
       SearchResult(),
-      chatBot(
-        changeToHome: ()=>changePage(0),
-      ),
+      ChatBot(),
     ];
     return Scaffold(
       bottomNavigationBar: NavigationBar(

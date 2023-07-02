@@ -31,7 +31,7 @@ class ChatBubble extends StatelessWidget {
               bottomRight: Radius.circular(30),
             ),
             elevation: 5,
-            color: isMe ? Colors.blue : Colors.white,
+            color: isMe ? const Color(0xFF40E0D0) : Colors.white,
             child: ConstrainedBox(
               constraints: BoxConstraints(
                 maxWidth: MediaQuery.of(context).size.width * 0.7,

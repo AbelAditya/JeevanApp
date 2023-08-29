@@ -1,9 +1,10 @@
 import 'dart:convert';
+import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 
 // Function to send user message and get a response from the ChatGPT API
 Future<String> sendMessage(String message) async {
-  var apiKey = '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'; // Replace with your OpenAI API key
+  var apiKey = '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'; // Replace with your OpenAI API key
   var url = 'https://api.openai.com/v1/chat/completions';
 
   var headers = {
@@ -26,8 +27,8 @@ Future<String> sendMessage(String message) async {
   if (response.statusCode == 200) {
     var data = jsonDecode(response.body);
     var reply = data['choices'][0]['message']['content'];
+
     return reply;
-  } else {
-    throw Exception('Failed to send message to ChatGPT');
   }
+  else return "Couldn't connnect to ChatGPT";
 }

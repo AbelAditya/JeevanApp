@@ -1,5 +1,6 @@
-import 'package:get/get.dart';
 import 'package:flutter_application_1/service/api.dart';
+import 'package:get/get.dart';
+// import 'package:flutter_application_1/service/api.dart';
 import 'package:flutter_application_1/modals/Message.dart';
 
 class TController extends GetxController{
@@ -8,6 +9,9 @@ class TController extends GetxController{
 
   List _allMed=[];
   List get allMed=>_allMed;
+
+  List _popular=[];
+  List get popular=>_popular;
 
   List<messageTemplate> _messages=[messageTemplate(msg: 'Hello, I am ChatBot. How can I help you?', dateTime: '12-10-2021 10:00', isMe: false)];
   List<messageTemplate> get messages=>_messages;
@@ -21,12 +25,17 @@ class TController extends GetxController{
     print(_cart);
   }
 
-  void getAllProd()async{
-    var x = await API.getProducts();
-    for(int i=0;i<x["data"].length;i++){
-      _allMed.add([x["data"][i]["attributes"]["Med_Name"],x["data"][i]["attributes"]["Price"].toDouble()]);
-    }
-    print(_allMed);
+  // void getAllProd()async{
+  //   var x = await API.getProducts();
+  //   for(int i=0;i<x["data"].length;i++){
+  //     _allMed.add([x["data"][i]["attributes"]["Med_Name"],x["data"][i]["attributes"]["Price"].toDouble()]);
+  //   }
+  //   print(_allMed);
+  // }
+
+  void getPopular()async{
+    var x = await API.getPopular();
+    _popular = x["data"];
   }
 
   void delItemCart(String name){

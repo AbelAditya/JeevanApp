@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
-class Chip1 extends StatelessWidget {
+class Chip1 extends StatefulWidget {
   const Chip1({required this.AssetName, required this.title});
   final String title;
   final String AssetName;
 
+  @override
+  State<Chip1> createState() => _Chip1State();
+}
 
+class _Chip1State extends State<Chip1> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -16,7 +21,7 @@ class Chip1 extends StatelessWidget {
           height: 100.h,
           width: 100.w,
           child: ClipRRect(
-            child: Image.asset(AssetName,fit: BoxFit.fill,),
+            child: Image.network(widget.AssetName,fit: BoxFit.fill,),
             borderRadius: BorderRadius.circular(10),
           ),
           decoration: BoxDecoration(
@@ -27,9 +32,9 @@ class Chip1 extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 5),
           child: Text(
-            title,
-            maxLines: 2,
-            textAlign: TextAlign.left,
+            widget.title,
+            overflow: TextOverflow.ellipsis,
+            textAlign: TextAlign.center,
             style: GoogleFonts.poppins(
                 color: Colors.black,
                 fontSize: 15.sp,

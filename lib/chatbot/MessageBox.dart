@@ -36,6 +36,7 @@ class MessageBox extends GetView<ChatBotController> {
           ),
           SizedBox(width: 10),
           FloatingActionButton(
+            backgroundColor: Color(0xff40e0d0),
             onPressed: () {
               String userMessage = textController.text;
               textController.clear();

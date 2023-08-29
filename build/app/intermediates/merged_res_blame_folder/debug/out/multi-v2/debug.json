@@ -4063,6 +4063,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\abela\\.gradle\\caches\\transforms-3\\403160f168a00422ccd3017404912d55\\transformed\\jetified-circleimageview-2.2.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "313",
+                        "endOffsets": "364"
+                    },
+                    "to": {
+                        "startLines": "6886",
+                        "startColumns": "4",
+                        "startOffsets": "412642",
+                        "endColumns": "313",
+                        "endOffsets": "412951"
+                    }
+                },
+                {
                     "source": "C:\\Users\\abela\\.gradle\\caches\\transforms-3\\82490d2fdb64ba2719fe6089d0421170\\transformed\\transition-1.2.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -4247,6 +4264,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\abela\\.gradle\\caches\\transforms-3\\1a5b1b8aa1ebdd329c536e67108e8bb6\\transformed\\jetified-glide-4.9.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "57",
+                        "endOffsets": "108"
+                    },
+                    "to": {
+                        "startLines": "1262",
+                        "startColumns": "4",
+                        "startOffsets": "72798",
+                        "endColumns": "57",
+                        "endOffsets": "72851"
+                    }
+                },
+                {
                     "source": "D:\\Programming\\Healthcare project\\Jeevan\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
@@ -4263,23 +4297,6 @@
                         "endLines": "3981,4044",
                         "endColumns": "12,12",
                         "endOffsets": "256025,260158"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\abela\\.gradle\\caches\\transforms-3\\64d791b7f80ed2df4077ba6841b7418f\\transformed\\jetified-glide-4.9.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "57",
-                        "endOffsets": "108"
-                    },
-                    "to": {
-                        "startLines": "1262",
-                        "startColumns": "4",
-                        "startOffsets": "72798",
-                        "endColumns": "57",
-                        "endOffsets": "72851"
                     }
                 },
                 {
@@ -4447,23 +4464,6 @@
                         "endLines": "26,31,36,42,1626,1628,1636,1637,1640,1641,1646,1658,1664,1665,1672",
                         "endColumns": "19,19,19,19,91,75,86,174,81,102,71,95,43,97,167",
                         "endOffsets": "980,1213,1450,1666,98749,98880,99520,99695,99960,100063,100412,101323,101658,101756,102328"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\abela\\.gradle\\caches\\transforms-3\\adf8d0346feb649e87cdbf27579abe4a\\transformed\\jetified-circleimageview-2.2.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "313",
-                        "endOffsets": "364"
-                    },
-                    "to": {
-                        "startLines": "6886",
-                        "startColumns": "4",
-                        "startOffsets": "412642",
-                        "endColumns": "313",
-                        "endOffsets": "412951"
                     }
                 },
                 {

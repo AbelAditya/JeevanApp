@@ -9,9 +9,10 @@ import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:flutter_application_1/screens/SearchResult.dart';
 import 'Cart.dart';
 import 'package:flutter_application_1/modals/data.dart';
-import 'package:kommunicate_flutter/kommunicate_flutter.dart';
 import 'package:flutter_application_1/screens/homeScreen.dart';
 import '../chatbot/ChatBot.dart';
+import 'Market.dart';
+import 'package:flutter_application_1/symptom checker/SymptomBot.dart';
 
 class Onboard extends StatefulWidget {
   const Onboard({super.key});
@@ -27,10 +28,6 @@ class _OnboardState extends State<Onboard> {
 
   TController cont = Get.put(TController());
 
-  // void initState(){
-  //   cont.getAllProd();
-  //   super.initState();
-  // }
   void changePage(int val){
     setState(() {
       index=val;
@@ -42,9 +39,11 @@ class _OnboardState extends State<Onboard> {
   Widget build(BuildContext context) {
     screens = [
       HomeScreen(changeToMarket: ()=>changePage(1),
-        changeToBot: ()=> changePage(2),
+        changeToBot: ()=> changePage(3),
+        changeToSymptomBot: ()=>changePage(2),
       ),
-      SearchResult(),
+      Market(postpin: "xyz"),
+      ChatBotS(),
       ChatBot(),
     ];
     return Scaffold(
@@ -76,11 +75,20 @@ class _OnboardState extends State<Onboard> {
           NavigationDestination(
               icon: index == 2
                   ? new PhosphorIcon(
-                      PhosphorIcons.fill.robot,
+                      PhosphorIcons.fill.heartbeat,
                     )
                   : new PhosphorIcon(
-                      PhosphorIcons.regular.robot,
+                      PhosphorIcons.regular.heartbeat,
                     ),
+              label: "Diagnose"),
+          NavigationDestination(
+              icon: index == 3
+                  ? new PhosphorIcon(
+                PhosphorIcons.fill.robot,
+              )
+                  : new PhosphorIcon(
+                PhosphorIcons.regular.robot,
+              ),
               label: "Chatbot"),
         ],
       ),

@@ -46,6 +46,7 @@ class ChatBotController extends GetxController {
     scrollToBottom();
 
     String response = await sendMessage(userMessage);
+
     addMessage(response, formattedDate, false);
     scrollToBottom();
   }

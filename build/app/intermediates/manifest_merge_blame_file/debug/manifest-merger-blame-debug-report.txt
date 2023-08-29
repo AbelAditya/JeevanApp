@@ -13,8 +13,8 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->D:\Programming\Healthcare project\Jeevan\android\app\src\debug\AndroidManifest.xml:7:5-66
-15-->D:\Programming\Healthcare project\Jeevan\android\app\src\debug\AndroidManifest.xml:7:22-64
+15-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:4:5-66
+15-->D:\Programming\Healthcare project\Jeevan\android\app\src\main\AndroidManifest.xml:4:22-64
 16    <uses-permission android:name="android.permission.WAKE_LOCK" />
 16-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
 16-->[:firebase_messaging] D:\Programming\Healthcare project\Jeevan\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65

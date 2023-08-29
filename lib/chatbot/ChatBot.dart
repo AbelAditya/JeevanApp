@@ -4,7 +4,7 @@ import 'ChatBotController.dart';
 import 'ChatBubble.dart';
 import 'MessageBox.dart';
 import 'package:get/get.dart';
-import 'package:flutter/services.dart';
+// import 'package:flutter/services.dart';
 
 class ChatBot extends GetView<ChatBotController> {
   final ChatBotController chat_controller = Get.put(ChatBotController());
@@ -16,7 +16,6 @@ class ChatBot extends GetView<ChatBotController> {
           backgroundColor: Color(0xff40e0d0),
           title: Row(
               children: [
-                SizedBox(width: 15),
                 CircleAvatar(
                   radius: 20,
                   backgroundImage: AssetImage('images/jeevan.jpg'),

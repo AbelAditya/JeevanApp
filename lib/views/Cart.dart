@@ -29,30 +29,38 @@ class _CartState extends State<Cart> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Stack(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("CART",style: GoogleFonts.poppins(
+                  color: Colors.black,
+                  fontSize: 30.sp,
+                  fontWeight: FontWeight.w500),),
+        centerTitle: true,
+      ),
+      body: Stack(
         children: [
           Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Container(
-                height: 80.h,
-                width: MediaQuery.of(context).size.width,
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 25.w, top: 10.h),
-                      child: Text(
-                        "CART",
-                        textAlign: TextAlign.left,
-                        style: GoogleFonts.poppins(
-                            color: Colors.black,
-                            fontSize: 30.sp,
-                            fontWeight: FontWeight.w500),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              // Container(
+              //   height: 80.h,
+              //   width: MediaQuery.of(context).size.width,
+              //   child: Column(
+              //     children: [
+              //       Padding(
+              //         padding: EdgeInsets.only(left: 25.w, top: 10.h),
+              //         child: Text(
+              //           "CART",
+              //           textAlign: TextAlign.left,
+              //           style: GoogleFonts.poppins(
+              //               color: Colors.black,
+              //               fontSize: 30.sp,
+              //               fontWeight: FontWeight.w500),
+              //         ),
+              //       ),
+              //     ],
+              //   ),
+              // ),
               cont.cart.isEmpty
                   ? Container(
                 child: Column(
@@ -115,6 +123,8 @@ class _CartState extends State<Cart> {
                           medName: cont.cart[index][0],
                           price: cont.cart[index][1],
                           count: cont.cart[index][2],
+                          imgUrl: cont.cart[index][3],
+                          descUrl: cont.cart[index][4],
                         ),
                       ),
                     ),

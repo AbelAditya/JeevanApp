@@ -1,6 +1,5 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/modals/data.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_application_1/views/Profile.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -11,7 +10,10 @@ class HomeScreen extends StatelessWidget {
 
   final Function changeToMarket;
   final Function changeToBot;
-  HomeScreen({required this.changeToMarket, required this.changeToBot});
+  final Function changeToSymptomBot;
+  HomeScreen({required this.changeToMarket, required this.changeToBot,required this.changeToSymptomBot});
+
+  TController cont = Get.put(TController());
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +52,7 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 30.0),
+            padding: EdgeInsets.only(top: 30.0.h),
             child: GestureDetector(
               onTap: () {
                 changeToBot();
@@ -62,7 +64,7 @@ class HomeScreen extends StatelessWidget {
                     Column(
                       children: [
                         Padding(
-                          padding: EdgeInsets.only(left: 13, top: 12),
+                          padding: EdgeInsets.only(left: 13.w, top: 12.h),
                           child: Text(
                             " Get the best \n Medical Advice",
                             style: GoogleFonts.poppins(
@@ -73,7 +75,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsets.only(left: 10, top: 5),
+                          padding: EdgeInsets.only(left: 10.w, top: 5.h),
                           child: Text(
                             " Click here for Free chat \n with our 24/7 available \n health expert",
                             textAlign: TextAlign.left,
@@ -87,8 +89,8 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                     Container(
-                      height: 151,
-                      width: 110,
+                      height: 151.h,
+                      width: 110.w,
                       child: Image.asset(
                         "images/doctor.png",
                         fit: BoxFit.cover,
@@ -122,7 +124,7 @@ class HomeScreen extends StatelessWidget {
                   Column(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(left: 13, top: 12),
+                        padding: EdgeInsets.only(left: 13.w, top: 12.h),
                         child: Text(
                           " Get free medicine \n delivery within \n one hour",
                           style: GoogleFonts.poppins(
@@ -160,80 +162,121 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(top: 17.0.h, left: 27.w),
-                child: Text(
-                  "Shop by category",
-                  textAlign: TextAlign.left,
-                  style: GoogleFonts.poppins(
-                      color: Colors.black,
-                      fontSize: 22.sp,
-                      fontWeight: FontWeight.bold),
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //   children: [
+          //     Padding(
+          //       padding: EdgeInsets.only(top: 17.0.h, left: 27.w),
+          //       child: Text(
+          //         "Shop Medicines",
+          //         textAlign: TextAlign.left,
+          //         style: GoogleFonts.poppins(
+          //             color: Colors.black,
+          //             fontSize: 22.sp,
+          //             fontWeight: FontWeight.bold),
+          //       ),
+          //     ),
+          //     GestureDetector(
+          //       onTap: () {
+          //         print("HomeAll");
+          //         changeToMarket();
+          //       },
+          //       child: Padding(
+          //         padding: EdgeInsets.only(top: 17.0.h, right: 39.h),
+          //         child: Text(
+          //           "View all",
+          //           textAlign: TextAlign.left,
+          //           style: GoogleFonts.poppins(
+          //               color: Colors.black,
+          //               fontSize: 20.sp,
+          //               fontWeight: FontWeight.w500),
+          //         ),
+          //       ),
+          //     ),
+          //   ],
+          // ),
+          // SizedBox(
+          //   height: 500,
+          //   child: GridView.builder(
+          //     shrinkWrap: true,
+          //     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          //       crossAxisCount: 3,
+          //     ),
+          //     itemBuilder: (BuildContext context, int index) {
+          //       return Expanded(flex: 1,child: Chip1(title: cont.popular[index]["Name"],AssetName: cont.popular[index]["image"],));
+          //     },
+          //     itemCount: cont.popular.length,),
+          // ),
+          Padding(
+            padding: EdgeInsets.only(top: 30.0.h),
+            child: GestureDetector(
+              onTap: () {
+                changeToSymptomBot();
+              },
+              child: Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Expanded(
+                      flex: 2,
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(left: 13.w, top: 12.h),
+                            child: Text(
+                              "Medical Diagnosis",
+                              style: GoogleFonts.poppins(
+                                  color: Colors.white,
+                                  fontSize: 22.sp,
+                                  fontWeight: FontWeight.bold),
+                              maxLines: 2,
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 10.w, top: 5.h),
+                            child: Text(
+                              " Click here for a quick and accurate diagnosis of your ailment ",
+                              textAlign: TextAlign.left,
+                              style: GoogleFonts.poppins(
+                                  color: Colors.white,
+                                  fontSize: 14.sp,
+                                  fontWeight: FontWeight.w500),
+                              maxLines: 3,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Container(
+                        height: 151.h,
+                        width: 110.w,
+                        child: Image.asset(
+                          "images/doctor.png",
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    )
+                  ],
                 ),
-              ),
-              GestureDetector(
-                onTap: () {
-                  print("HomeAll");
-                  changeToMarket();
-                },
-                child: Padding(
-                  padding: EdgeInsets.only(top: 17.0.h, right: 39.h),
-                  child: Text(
-                    "View all",
-                    textAlign: TextAlign.left,
-                    style: GoogleFonts.poppins(
-                        color: Colors.black,
-                        fontSize: 20.sp,
-                        fontWeight: FontWeight.w500),
+                height: 151.h,
+                width: 345.w,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  gradient: LinearGradient(
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
+                    colors: <Color>[
+                      Color(0xff40E0D0),
+                      Color(0xff6A4AEC),
+                    ],
+                    tileMode: TileMode.mirror,
                   ),
                 ),
               ),
-            ],
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 20.h),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5.0,vertical: 10.0),
-                      child: Chip1(title: "Accessories",AssetName: "images/Accessories.jpg",),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5.0,vertical: 10.0),
-                      child: Chip1(title: "Health Devices",AssetName: "images/HealthCareDevices.jpg",),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5.0,vertical: 10.0),
-                      child: Chip1(title: "Personal Care",AssetName: "images/Personal Care.jfif"),
-                    )
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5.0,vertical: 10.0),
-                      child: Chip1(title: "Supplements",AssetName: "images/supplement.jpg"),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5.0,vertical: 10.0),
-                      child: Chip1(title: "Food & Drinks",AssetName: "images/FoodNDrinks.jpg"),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5.0,vertical: 10.0),
-                      child: Chip1(title: "Health Care",AssetName: "images/HealthCondition.jpg"),
-                    )
-                  ],
-                ),
-              ],
             ),
-          )
+          ),
         ]),
       ),
     );
